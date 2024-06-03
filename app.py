@@ -9,6 +9,7 @@ def home():
 
 @app.route('/run_script', methods=['GET'])
 def run_script():
+    print("heyy")
     data = fetch_twitter_trends()
     if data:
         return jsonify(data)
